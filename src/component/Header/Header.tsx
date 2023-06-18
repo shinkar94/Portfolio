@@ -1,14 +1,31 @@
 import React from 'react';
 import styled from "styled-components";
+import {useAppDispatch} from "../../app/hooks";
+import {appAction} from "../../features/app/appReducer";
+
 
 export const Header = () => {
+    const dispatch = useAppDispatch()
+    const onClickHandler = (namePage: string)=>{
+        switch (namePage) {
+            case 'about':{
+                dispatch(appAction.aboutPage({}))
+                break
+            }
+            case 'home':{
+                dispatch(appAction.homePage({}))
+                break
+            }
+            default: dispatch(appAction.homePage({}))
+        }
+    }
     return (
         <StHeader>
             <ul>
-                <li className="li_home">Home</li>
-                <li>Profile</li>
-                <li className="li_abaut">About Me</li>
-                <li>Example</li>
+                <li onClick={()=> onClickHandler('home')}>Home</li>
+                <li onClick={()=> onClickHandler('profile')}>Profile</li>
+                <li onClick={()=> onClickHandler('about')}>About Me</li>
+                <li onClick={()=> onClickHandler('example')}>Example</li>
             </ul>
         </StHeader>
     );
@@ -26,6 +43,7 @@ const StHeader = styled.header`
     justify-content: right;
     background: rgba(0, 0, 0, 0.342);
     & li{
+      font-weight: bold;
       list-style-type: none;
       font-size: calc(var(--index) * 1.2);
       cursor: pointer;

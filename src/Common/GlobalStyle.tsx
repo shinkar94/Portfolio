@@ -1,13 +1,18 @@
 import {createGlobalStyle} from "styled-components";
+import {InitialAppType} from "../features/app/appReducer";
 
 
-export const GlobalStyle = createGlobalStyle`
+type appStateProps = {
+    appState: InitialAppType
+}
+
+export const GlobalStyle = createGlobalStyle<appStateProps>`
   body{
     background-color: #000;
     color: #fff;
-    --transition_l7: 100vh;
-    --transition_l3: 0vw;
-    --transition_l2: 0vw;
+    --transition_l7: ${props => props.appState.transition_l7};
+    --transition_l3: ${props => props.appState.transition_l3};
+    --transition_l2: ${props => props.appState.transition_l2};
   }
   
   ::-webkit-scrollbar {
