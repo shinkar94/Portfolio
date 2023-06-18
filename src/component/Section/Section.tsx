@@ -7,6 +7,20 @@ import fon5 from '../../img/f4.png'
 import fon6 from '../../img/layer-6.png'
 
 export const Section = () => {
+    useEffect(() => {
+        const handleMouseMove = (e:MouseEvent) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * -0.005;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            document.documentElement.style.setProperty("--move-x", `${moveX}deg`);
+            document.documentElement.style.setProperty("--move-y", `${moveY}deg`);
+        };
+
+        document.addEventListener("mousemove", handleMouseMove);
+
+        return () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, []);
     return (
         <StSection>
             <div className="layers__container">
@@ -39,50 +53,6 @@ const StSection = styled.section`
     transform: rotateX(var(--move-y)) rotateY(var(--move-x));
     will-change: transform;
     transition: transform var(--transition);
-  }
-  .hero-content {
-    font-size: calc(var(--index) * 2.2);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: calc(var(--index) * -.15);
-    line-height: 1.35em;
-    margin-top: calc(var(--index) * 5.5);
-  }
-  .hero-content span {
-    display: block;
-  }
-  .hero-content__p {
-    text-transform: none;
-    font-family: merriweather-italic-3d,serif;
-    letter-spacing: normal;
-    font-size: calc(var(--index) * .73);
-    line-height: 3;
-  }
-
-  .button-start {
-    font-family: Arial,serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: calc(var(--index) * .71);
-    letter-spacing: -.02vw;
-    padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
-    background-color: transparent;
-    color: #fff;
-    border-radius: 10em;
-    border: rgb(255 255 255 / .4) 3px solid;
-    outline: none;
-    cursor: pointer;
-    margin-top: calc(var(--index) * 2.5);
-  }
-  .layer-4, .layer-5, .layer-6 {
-    pointer-events: none;
-  }
-  /* Abaut */
-  .abaut-content{
-    width: 50vw;
-    height: 50vh;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.39);
   }
 `
 
@@ -131,5 +101,49 @@ const LayersItem = styled.div<LayersItemType>`
   }
   &.layer-7{
     transform: translateZ(180px) translateY(var(--transition_l7));
+  }
+  .hero-content {
+    font-size: calc(var(--index) * 2.2);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: calc(var(--index) * -.15);
+    line-height: 1.35em;
+    margin-top: calc(var(--index) * 5.5);
+  }
+  .hero-content span {
+    display: block;
+  }
+  .hero-content__p {
+    text-transform: none;
+    font-family: merriweather-italic-3d,serif;
+    letter-spacing: normal;
+    font-size: calc(var(--index) * .73);
+    line-height: 3;
+  }
+
+  .button-start {
+    font-family: Arial,serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: calc(var(--index) * .71);
+    letter-spacing: -.02vw;
+    padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10em;
+    border: rgb(255 255 255 / .4) 3px solid;
+    outline: none;
+    cursor: pointer;
+    margin-top: calc(var(--index) * 2.5);
+  }
+  .layer-4, .layer-5, .layer-6 {
+    pointer-events: none;
+  }
+  /* Abaut */
+  .abaut-content{
+    width: 50vw;
+    height: 50vh;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.39);
   }
 `

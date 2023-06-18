@@ -1,22 +1,14 @@
 import {createGlobalStyle} from "styled-components";
-import {useEffect, useState} from "react";
-// import KamerikFont from '../fonts/kamerik205-heavy.woff2';
 
 
 export const GlobalStyle = createGlobalStyle`
   body{
     background-color: #000;
     color: #fff;
-    /*font-family: kamerik-3d;*/
     --transition_l7: 100vh;
     --transition_l3: 0vw;
     --transition_l2: 0vw;
   }
-  // @font-face {
-  //   font-family: 'kamerik-3d';
-  
-  //   font-weight: 900;
-  // }
   
   ::-webkit-scrollbar {
     width: 0;
