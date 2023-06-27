@@ -1,44 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
+import styled from "styled-components";
+import {AboutHead} from "./AbautPage/AboutHead";
+import {MeAbout} from "./AbautPage/MeAbout";
+import {Route, Routes} from "react-router-dom";
+import {TextPage} from "./AbautPage/TextPage";
+import {AboutPage} from "./AbautPage/Me";
 
 export const Abaut = () => {
     return (
         <div className="abaut-content">
-            <div className="content_box">
-                <h3 className="box_title">Hi</h3>
-                <p className="box_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias
-                    veniam assumenda, molestiae, commodi a quisquam eos repellat porro est ipsa? Possimus a, temporibus
-                    eaque est consequuntur aperiam debitis nam.</p>
-            </div>
-            <div className="content_box">
-                <h3 className="box_title">2012</h3>
-                <p className="box_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias
-                    veniam assumenda, molestiae, commodi a quisquam eos repellat porro est ipsa? Possimus a, temporibus
-                    eaque est consequuntur aperiam debitis nam.</p>
-            </div>
-            <div className="content_box">
-                <h3 className="box_title">2017</h3>
-                <p className="box_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias
-                    veniam assumenda, molestiae, commodi a quisquam eos repellat porro est ipsa? Possimus a, temporibus
-                    eaque est consequuntur aperiam debitis nam.</p>
-            </div>
-            <div className="content_box">
-                <h3 className="box_title">2019</h3>
-                <p className="box_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias
-                    veniam assumenda, molestiae, commodi a quisquam eos repellat porro est ipsa? Possimus a, temporibus
-                    eaque est consequuntur aperiam debitis nam.</p>
-            </div>
-            <div className="content_box">
-                <h3 className="box_title">2022</h3>
-                <p className="box_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias
-                    veniam assumenda, molestiae, commodi a quisquam eos repellat porro est ipsa? Possimus a, temporibus
-                    eaque est consequuntur aperiam debitis nam.</p>
-            </div>
-            <div className="content_box">
-                <h3 className="box_title">2023</h3>
-                <p className="box_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias
-                    veniam assumenda, molestiae, commodi a quisquam eos repellat porro est ipsa? Possimus a, temporibus
-                    eaque est consequuntur aperiam debitis nam.</p>
-            </div>
+            <StAboutWrapper>
+                <AboutHead />
+                <div className="abaut_text">
+                    <Routes>
+                        <Route path={'/Profile'} element={<MeAbout/>}/>
+                        <Route path={'/Bsatu'} element={<TextPage text={AboutPage.BSATU}/>}/>
+                        <Route path={'/Khsp'} element={<TextPage text={AboutPage.KHSHP}/>}/>
+                        <Route path={'/Army'} element={<TextPage text={AboutPage.ARMY}/>}/>
+                        <Route path={'/Borisov'} element={<TextPage text={AboutPage.BORISOVENRGO}/>}/>
+                        <Route path={'/Incubator'} element={<TextPage text={AboutPage.INCUBATOR}/>}/>
+                    </Routes>
+                </div>
+            </StAboutWrapper>
         </div>
     );
 };
+
+const StAboutWrapper = styled.div`
+  display: flex;
+`

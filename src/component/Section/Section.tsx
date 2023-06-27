@@ -98,6 +98,7 @@ const LayersItem = styled.div<LayersItemType>`
   &.layer-6 {
     background-image: url(${({fon6}) => fon6});
     transform: translateZ(380px);
+    pointer-events: none;
   }
   &.layer-7{
     transform: translateZ(180px) translateY(var(--transition_l7));
@@ -136,7 +137,7 @@ const LayersItem = styled.div<LayersItemType>`
     cursor: pointer;
     margin-top: calc(var(--index) * 2.5);
   }
-  .layer-4, .layer-5, .layer-6 {
+  .layer-4,.layer-3, .layer-5, .layer-6, .layer-7 {
     pointer-events: none;
   }
   /* Abaut */
