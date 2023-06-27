@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {Abaut} from "../AbautMe/Abaut";
 import styled from "styled-components";
-import fon1 from '../../img/fon1.jpg'
-import fon2 from '../../img/i3.webp'
-import fon5 from '../../img/f4.png'
+import fon1 from '../../img/fon2.jpg'
+import fon2 from '../../img/i1.webp'
 import fon6 from '../../img/layer-6.png'
 
 export const Section = () => {
@@ -28,12 +27,11 @@ export const Section = () => {
                 <LayersItem className="layer-2" fon2={fon2}></LayersItem>
                 <LayersItem className="layer-3">
                     <div className="hero-content">
-                        <h1>Java Script DEVELOPER <span>REACT / REDUX</span></h1>
-                        <div className="hero-content__p">I am familiar with Angular, Vue, React Native.</div>
-                        <button className="button-start">Start Learning</button>
+                        <h1>FRONTEND DEVELOPER <span>REACT / REDUX</span></h1>
+                        <div className="hero-content__p">ROMAN SHINKARENKO</div>
                     </div>
                 </LayersItem>
-                <LayersItem className="layer-5" fon5={fon5}></LayersItem>
+                {/*<LayersItem className="layer-5" fon5={fon5}></LayersItem>*/}
                 <LayersItem className="layer-6" fon6={fon6}></LayersItem>
                 <LayersItem className="layer-7">
                     <Abaut />
@@ -118,7 +116,7 @@ const LayersItem = styled.div<LayersItemType>`
     text-transform: none;
     font-family: merriweather-italic-3d,serif;
     letter-spacing: normal;
-    font-size: calc(var(--index) * .73);
+    font-size: calc(var(--index) * .9);
     line-height: 3;
   }
 

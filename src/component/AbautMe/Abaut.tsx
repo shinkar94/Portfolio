@@ -14,11 +14,8 @@ export const Abaut = () => {
                 <div className="abaut_text">
                     <Routes>
                         <Route path={'/Profile'} element={<MeAbout/>}/>
-                        <Route path={'/Bsatu'} element={<TextPage text={AboutPage.BSATU}/>}/>
-                        <Route path={'/Khsp'} element={<TextPage text={AboutPage.KHSHP}/>}/>
-                        <Route path={'/Army'} element={<TextPage text={AboutPage.ARMY}/>}/>
-                        <Route path={'/Borisov'} element={<TextPage text={AboutPage.BORISOVENRGO}/>}/>
-                        <Route path={'/Incubator'} element={<TextPage text={AboutPage.INCUBATOR}/>}/>
+                        <Route path={'/education'} element={<TextPage text={AboutPage.BSATU} text2={AboutPage.INCUBATOR}/>}/>
+                        <Route path={'/work'} element={<TextPage text={AboutPage.ARMY} text2={AboutPage.BORISOVENRGO}/>}/>
                     </Routes>
                 </div>
             </StAboutWrapper>

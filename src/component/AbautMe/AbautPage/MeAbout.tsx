@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {AboutPage} from "./Me";
+import {ScrollLine} from "../../ScrollLine/ScrollLine";
 
 export const MeAbout = () => {
     return (
@@ -22,6 +23,7 @@ export const MeAbout = () => {
                     </div>
                 </div>
             </div>
+            <ScrollLine />
             <div className="steck">
                 {
                     AboutPage.me.skills.map(el => {

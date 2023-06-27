@@ -12,33 +12,13 @@ export const AboutHead = () => {
                 </NavLink>
             </div>
             <div className="block_date">
-                <NavLink to={'Bsatu'}>
-                    <h3 className="block_yaer">2012-2017</h3>
-                    <h4 className="block_title">BSATU</h4>
+                <NavLink to={'education'}>
+                    <h3 className="block_yaer">Education</h3>
                 </NavLink>
             </div>
             <div className="block_date">
-                <NavLink to={'Khsp'}>
-                    <h3 className="block_yaer">2017</h3>
-                    <h4 className="block_title">KHSHP</h4>
-                </NavLink>
-            </div>
-            <div className="block_date">
-                <NavLink to={'Army'}>
-                    <h3 className="block_yaer">2017-2020</h3>
-                    <h4 className="block_title">Army</h4>
-                </NavLink>
-            </div>
-            <div className="block_date">
-                <NavLink to={'Borisov'}>
-                    <h3 className="block_yaer">2020-2023</h3>
-                    <h4 className="block_title">BORISOVENRGO</h4>
-                </NavLink>
-            </div>
-            <div className="block_date">
-                <NavLink to={'Incubator'}>
-                    <h3 className="block_yaer">01.01.2023 - 2023</h3>
-                    <h4 className="block_title">IT-INCUBATOR</h4>
+                <NavLink to={'work'}>
+                    <h3 className="block_yaer">Experience</h3>
                 </NavLink>
             </div>
         </AboutHed>

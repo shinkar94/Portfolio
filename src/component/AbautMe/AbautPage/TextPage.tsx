@@ -1,23 +1,24 @@
 import React, {FC, useEffect, useState} from 'react';
 import styled from "styled-components";
+import {infosType} from "./Me";
 type TextPage ={
-    text: string
+    text: infosType
+    text2: infosType
 }
 export const TextPage:FC<TextPage> = (props) => {
-    const {text} = props
+    const {text, text2} = props
     const [printedText, setPrintedText] = useState("");
 
     useEffect(() => {
         setPrintedText("")
-        setPrintedText(text.charAt(0))
+        setPrintedText(text.text.charAt(0))
         let i = 0;
         const interval = setInterval(() => {
-            console.log(text[i])
-            if (text[i] !== undefined) {
-                setPrintedText((prevText) => prevText + text[i]);
+            if (text.text[i] !== undefined) {
+                setPrintedText((prevText) => prevText + text.text[i]);
             }
             i++;
-            if (i === text.length){
+            if (i === text.text.length){
                 clearInterval(interval);
                 if (printedText.endsWith("undefined")) {
                     setPrintedText((prevText) => prevText.slice(0, -10)); // удаляем последние 10 символов
@@ -29,7 +30,10 @@ export const TextPage:FC<TextPage> = (props) => {
     }, [text]);
     return (
         <StContainer>
+            <h3>{text.title}</h3>
             <p>{printedText}</p>
+            <h3>{text2.title}</h3>
+            <p>{text2.text}</p>
         </StContainer>
     );
 };
