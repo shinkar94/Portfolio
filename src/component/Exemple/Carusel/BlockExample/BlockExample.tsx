@@ -24,11 +24,15 @@ export const BlockExample:FC<PropsType> = ({example}) => {
     );
 };
 const StExample = styled.div`
+  & h3{
+    text-align: center;
+    background: black;
+    border-bottom: 2px solid burlywood;
+  }
   .blockImg {
     position: relative;
     display: flex;
     justify-content: center;
-
     .viewShadow {
       position: absolute;
       top: 50%;

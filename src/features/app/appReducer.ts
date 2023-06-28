@@ -34,7 +34,7 @@ const slice = createSlice({
             state.transition_l8 = '0vw'
             state.transition_l7 = '100vh'
             state.transition_l3 = '-100vw'
-            state.transition_l2 = '100vw'
+            state.transition_l2 = '45vw'
         }
     }
 })
