@@ -4,6 +4,7 @@ import styled from "styled-components";
 import fon1 from '../../img/fon3.jpg'
 import fon2 from '../../img/i1.webp'
 import fon6 from '../../img/layer-6.png'
+import {ExampleWork} from "../Exemple/ExampleWork";
 
 export const Section = () => {
     useEffect(() => {
@@ -35,6 +36,9 @@ export const Section = () => {
                 <LayersItem className="layer-6" fon6={fon6}></LayersItem>
                 <LayersItem className="layer-7">
                     <Abaut />
+                </LayersItem>
+                <LayersItem className="layer-8">
+                    <ExampleWork />
                 </LayersItem>
             </div>
         </StSection>
@@ -105,8 +109,11 @@ const LayersItem = styled.div<LayersItemType>`
     pointer-events: none;
   }
 
-  &.layer-7 {
+  &.layer-7{
     transform: translateZ(180px) translateY(var(--transition_l7));
+  }
+  &.layer-8{
+    transform: translateZ(180px) translateY(var(--transition_l8));
   }
 
   .hero-content {
@@ -150,14 +157,5 @@ const LayersItem = styled.div<LayersItemType>`
 
   .layer-4, .layer-3, .layer-5, .layer-6, .layer-7 {
     pointer-events: none;
-  }
-
-  /* Abaut */
-
-  .abaut-content {
-    width: 50vw;
-    height: 50vh;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.39);
   }
 `

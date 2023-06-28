@@ -8,7 +8,6 @@ import {useAppSelector} from "./app/hooks";
 
 function App() {
     const appState = useAppSelector(state => state.app)
-    console.log(appState)
     return (
         <StApp>
             <GlobalStyle appState={appState}/>

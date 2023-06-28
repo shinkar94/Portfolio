@@ -8,21 +8,30 @@ import {AboutPage} from "./AbautPage/Me";
 
 export const Abaut = () => {
     return (
-        <div className="abaut-content">
+        <StAboutContent>
             <StAboutWrapper>
-                <AboutHead />
+                <AboutHead/>
                 <div className="abaut_text">
                     <Routes>
+                        <Route path={'/Portfolio'} element={<MeAbout/>}/>
                         <Route path={'/Profile'} element={<MeAbout/>}/>
-                        <Route path={'/education'} element={<TextPage text={AboutPage.BSATU} text2={AboutPage.INCUBATOR}/>}/>
-                        <Route path={'/work'} element={<TextPage text={AboutPage.ARMY} text2={AboutPage.BORISOVENRGO}/>}/>
+                        <Route path={'/education'}
+                               element={<TextPage text={AboutPage.BSATU} text2={AboutPage.INCUBATOR}/>}/>
+                        <Route path={'/work'}
+                               element={<TextPage text={AboutPage.ARMY} text2={AboutPage.BORISOVENRGO}/>}/>
                     </Routes>
                 </div>
             </StAboutWrapper>
-        </div>
+        </StAboutContent>
     );
 };
 
 const StAboutWrapper = styled.div`
   display: flex;
+`
+const StAboutContent = styled.div`
+  width: 50vw;
+  height: 50vh;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.39);
 `

@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle<appStateProps>`
   body{
     background-color: #000;
     color: #fff;
+    --transition_l8: ${props => props.appState.transition_l8};
     --transition_l7: ${props => props.appState.transition_l7};
     --transition_l3: ${props => props.appState.transition_l3};
     --transition_l2: ${props => props.appState.transition_l2};

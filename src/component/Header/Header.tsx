@@ -16,6 +16,10 @@ export const Header = () => {
                 dispatch(appAction.homePage({}))
                 break
             }
+            case 'example':{
+                dispatch(appAction.examplesPage({}))
+                break
+            }
             default: dispatch(appAction.homePage({}))
         }
     }
@@ -23,9 +27,8 @@ export const Header = () => {
         <StHeader>
             <ul>
                 <li onClick={()=> onClickHandler('home')}>Home</li>
-                <li onClick={()=> onClickHandler('profile')}>Profile</li>
                 <li onClick={()=> onClickHandler('about')}>About Me</li>
-                <li onClick={()=> onClickHandler('example')}>Example</li>
+                <li onClick={()=> onClickHandler('example')}>Work examples</li>
             </ul>
         </StHeader>
     );
