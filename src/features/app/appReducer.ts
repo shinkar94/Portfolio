@@ -19,7 +19,7 @@ const slice = createSlice({
         aboutPage: (state, action) => {
                 state.transition_l7 = '0vh'
                 state.transition_l3 = '-100vw'
-                state.transition_l2 = '50vw'
+                state.transition_l2 = '45vw'
         },
         homePage: (state, action) => {
                 state.transition_l7 = '100vh'

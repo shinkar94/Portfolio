@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Abaut} from "../AbautMe/Abaut";
 import styled from "styled-components";
-import fon1 from '../../img/fon2.jpg'
+import fon1 from '../../img/fon3.jpg'
 import fon2 from '../../img/i1.webp'
 import fon6 from '../../img/layer-6.png'
 
@@ -28,7 +28,7 @@ export const Section = () => {
                 <LayersItem className="layer-3">
                     <div className="hero-content">
                         <h1>FRONTEND DEVELOPER <span>REACT / REDUX</span></h1>
-                        <div className="hero-content__p">ROMAN SHINKARENKO</div>
+                        <h1 className="hero-content__p">ROMAN SHINKARENKO</h1>
                     </div>
                 </LayersItem>
                 {/*<LayersItem className="layer-5" fon5={fon5}></LayersItem>*/}
@@ -70,22 +70,27 @@ const LayersItem = styled.div<LayersItemType>`
   align-items: center;
   justify-content: center;
   transition: transform 1s ease-out;
+
   &.layer-1 {
     background-image: url(${({fon1}) => fon1});
     transform: translateZ(-55px) scale(1.06);
   }
+
   &.layer-2 {
     background-image: url(${({fon2}) => fon2});
-    transform: translateZ(80px) scale(.7) translateY(90px) translateX(var(--transition_l2));
+    transform: translateZ(80px) scale(.74) translateY(90px) translateX(var(--transition_l2));
     background-size: contain;
     background-repeat: no-repeat;
   }
+
   &.layer-3 {
     transform: translateZ(180px) scale(.8) translateX(var(--transition_l3));
   }
+
   &.layer-4 {
     transform: translateZ(190px) scale(.9);
   }
+
   &.layer-5 {
     background-image: url(${({fon5}) => fon5});
     transform: translateZ(50px) scale(.9) rotate(90deg);
@@ -93,14 +98,17 @@ const LayersItem = styled.div<LayersItemType>`
     background-repeat: no-repeat;
     /* background-position: 100px 500px; */
   }
+
   &.layer-6 {
     background-image: url(${({fon6}) => fon6});
     transform: translateZ(380px);
     pointer-events: none;
   }
-  &.layer-7{
+
+  &.layer-7 {
     transform: translateZ(180px) translateY(var(--transition_l7));
   }
+
   .hero-content {
     font-size: calc(var(--index) * 2.2);
     text-align: center;
@@ -108,20 +116,24 @@ const LayersItem = styled.div<LayersItemType>`
     letter-spacing: calc(var(--index) * -.15);
     line-height: 1.35em;
     margin-top: calc(var(--index) * 5.5);
+    color: #d7bd97;
+    text-shadow: 0 1px black;
   }
+
   .hero-content span {
     display: block;
   }
+
   .hero-content__p {
     text-transform: none;
-    font-family: merriweather-italic-3d,serif;
+    //font-family: merriweather-italic-3d, serif;
     letter-spacing: normal;
-    font-size: calc(var(--index) * .9);
+    font-size: calc(var(--index) * 1.5);
     line-height: 3;
   }
 
   .button-start {
-    font-family: Arial,serif;
+    font-family: Arial, serif;
     font-weight: 600;
     text-transform: uppercase;
     font-size: calc(var(--index) * .71);
@@ -135,11 +147,14 @@ const LayersItem = styled.div<LayersItemType>`
     cursor: pointer;
     margin-top: calc(var(--index) * 2.5);
   }
-  .layer-4,.layer-3, .layer-5, .layer-6, .layer-7 {
+
+  .layer-4, .layer-3, .layer-5, .layer-6, .layer-7 {
     pointer-events: none;
   }
+
   /* Abaut */
-  .abaut-content{
+
+  .abaut-content {
     width: 50vw;
     height: 50vh;
     overflow: auto;

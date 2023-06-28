@@ -50,7 +50,7 @@ const AboutHed = styled.div`
     }
 
     & h3, h4 {
-      font-size: calc(var(--index) * .7);
+      font-size: calc(var(--index) * 1.1);
       margin: 2px;
     }
   }

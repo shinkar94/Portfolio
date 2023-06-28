@@ -2,12 +2,13 @@ import React from 'react';
 import styled from "styled-components";
 import {AboutPage} from "./Me";
 import {ScrollLine} from "../../ScrollLine/ScrollLine";
+import i2 from '../../../img/i2.jpg'
 
 export const MeAbout = () => {
     return (
         <StMeAbout>
             <div className="meFace">
-                <img src="" alt="foto"/>
+                {/*<img src={i2} alt="foto"/>*/}
                 <div className="faceInfo">
                     <div className="info_block">
                         <span>Возрост: </span><span>28</span>
@@ -26,12 +27,12 @@ export const MeAbout = () => {
             <ScrollLine />
             <div className="steck">
                 {
-                    AboutPage.me.skills.map(el => {
+                    AboutPage.me.skills.map((el,index) => {
                         return(
-                            <div className="block_steck">
+                            <div className="block_steck" key={index}>
                                 <div className="steck_title">{el.nameSkill}</div>
                                 <div className="steck_progres">
-                                    <div className="progres_line" style={{width: `${el.percent}%`}}>{el.percent}%</div>
+                                    <div className="progres_line" style={{width: `${el.percent}%`}}><span>{el.percent}%</span></div>
                                 </div>
                             </div>
                         )
@@ -43,37 +44,60 @@ export const MeAbout = () => {
 };
 
 const StMeAbout = styled.div`
-  .meFace{
+  height: 50vh;
+  overflow: auto;
+  .meFace {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+    color: #ffffff;
+    background: #9a8a67;
+    padding: 10px;
   }
-  .meFace img{
-    width: 10vw;
-    height: 10vw;
+
+  .meFace img {
+    width: 11vw;
+    height: 14vw;
     background: black;
   }
-  .block_steck{
+
+  .steck {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block_steck {
     /* background: green; */
     width: 30vw;
-    .steck_progres{
+
+    .steck_progres {
       width: 100%;
       height: 20px;
       background: rgb(0, 0, 0);
       box-shadow: inset 0 0 2px white;
+      border-radius: 4px;
     }
-    .steck_title{
+
+    .steck_title {
       padding-left: 8px;
     }
-    .progres_line{
+
+    .progres_line {
       display: flex;
       justify-content: left;
       align-items: center;
       /* width: 50%; */
       height: 20px;
-      background: rgb(216, 216, 216);
+      background: #D2C2AA;
       box-shadow: inset 0 0 5px black;
       color: black;
+      border-radius: 4px;
+
+      & span {
+        margin-left: 10px;
+      }
     }
   }
 `

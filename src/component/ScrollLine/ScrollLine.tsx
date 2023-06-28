@@ -27,7 +27,7 @@ export const ScrollLine = () => {
                     <img src={angular} alt="angular"/>
                     {/*<img src={apollo} alt="angular"/>*/}
                     <img src={cssImg} alt="angular"/>
-                    {/*<img src={formik} alt="angular"/>*/}
+                    <img src={formik} alt="angular"/>
                     {/*<img src={graphQL} alt="angular"/>*/}
                     <img src={html} alt="angular"/>
                     <img src={javaScript} alt="angular"/>
@@ -36,10 +36,10 @@ export const ScrollLine = () => {
                     <img src={reactQuery} alt="angular"/>
                     {/*<img src={reduxSaga} alt="angular"/>*/}
                     <img src={reduxTol} alt="angular"/>
-                    {/*<img src={restApi} alt="angular"/>*/}
+                    <img src={restApi} alt="angular"/>
                     <img src={storyBook} alt="angular"/>
                     <img src={TS} alt="angular"/>
-                    {/*<img src={Unit} alt="angular"/>*/}
+                    <img src={Unit} alt="angular"/>
                     <img src={WebSocket} alt="angular"/>
                 </div>
             </Marquee>

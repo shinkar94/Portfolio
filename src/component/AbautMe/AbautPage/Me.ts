@@ -46,6 +46,8 @@ export const AboutPage:AboutPageType = {
             {percent: 70, nameSkill: 'PHP'},
             {percent: 70, nameSkill: 'SQL'},
             {percent: 95, nameSkill: 'REACT'},
+            {percent: 95, nameSkill: 'REDUX'},
+            {percent: 95, nameSkill: 'REDUX TOOLKIT'},
         ]
     },
 
