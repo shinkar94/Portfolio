@@ -28,13 +28,16 @@ export const Abaut = () => {
 
 const StAboutWrapper = styled.div`
   display: flex;
+  ${({theme}) => theme.breakpoints.tablet}{
+    flex-direction: column;
+  }
 `
 const StAboutContent = styled.div`
   width: 50vw;
   height: 50vh;
   ${({theme}) => theme.breakpoints.tablet}{
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
   }
   overflow: auto;
   background: rgba(0, 0, 0, 0.39);

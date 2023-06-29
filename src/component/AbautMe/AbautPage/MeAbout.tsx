@@ -23,16 +23,16 @@ export const MeAbout = () => {
                 </div>
                 <div className="faceInfo">
                     <div className="info_block">
-                        <span>Возрост: </span><span>28</span>
+                        <span>Age: </span><span>28</span>
                     </div>
                     <div className="info_block">
-                        <span>Семейное: </span><span>Женат</span>
+                        <span>Family status: </span><span>Married</span>
                     </div>
                     <div className="info_block">
-                        <span>Дети: </span><span>Пока нет</span>
+                        <span>Children: </span><span>No</span>
                     </div>
                     <div className="info_block">
-                        <span>Напровление: </span><span>FRONTEND</span>
+                        <span>Direction: </span><span>FRONTEND</span>
                     </div>
                     <div className="info_block">
                         <span>City: </span><span>BORISOV</span>

@@ -8,13 +8,13 @@ type PropsType = {
 }
 
 export const BlockExample:FC<PropsType> = ({example}) => {
-    const {name,img,stack} = example[0]
+    const {name,img,stack, link} = example[0]
     return (
         <StExample>
             <h3>{name}</h3>
             <div className={'blockImg'}>
                 <img src={img} className={'imgExample'} alt={name}/>
-                <div className={'viewShadow'}><a href="#" target={'_blank'}><img src={searchImg} alt="search"/></a></div>
+                <div className={'viewShadow'}><a href={link} target={'_blank'}><img src={searchImg} alt="search"/></a></div>
             </div>
             <div className={'staсkExample'}>
                 {
@@ -80,6 +80,7 @@ const StExample = styled.div`
   .staсkExample{
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
     background: black;
     border-top: 2px outset burlywood;
     .stackImage{

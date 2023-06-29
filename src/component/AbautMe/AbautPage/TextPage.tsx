@@ -26,7 +26,7 @@ const StContainer = styled.div`
   width: 35vw;
   ${({theme}) => theme.breakpoints.tablet}{
     height: 70vh;
-    width: 57vw;
+    width: 80vw;
   }
   overflow: auto;
 `

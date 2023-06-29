@@ -15,6 +15,9 @@ const StExampleContainer = styled.div`
   width: 50vw;
   height: 50vh;
   ${({theme}) => theme.breakpoints.tablet}{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 80vw;
     height: 70vh;
   }

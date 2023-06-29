@@ -18,6 +18,7 @@ export type InitialExampleType = {
     order: number
     name: string
     img: string
+    link: string
     stack: StackType[]
 }
 type StackType = {
@@ -26,14 +27,14 @@ type StackType = {
 }
 
 const InitialState:InitialExampleType[] = [
-    {order: 1, name: 'Furuta', img: FurutaImg,
+    {order: 1, name: 'Furuta', img: FurutaImg,link: 'https://furuta.by/',
         stack: [
             {link: JSImg, nameStack: 'JS Native'},
             {link: HTMLImg,nameStack: 'HTML'},
             {link: CSSImg, nameStack: 'CSS'}
         ]
     },
-    {order: 2, name: 'MyMoney', img: MyMoney,
+    {order: 2, name: 'MyMoney', img: MyMoney,link: '',
         stack: [
             {link: ReactImg,nameStack: 'React'},
             {link: RTKImg,nameStack: 'RTK'},
@@ -44,7 +45,7 @@ const InitialState:InitialExampleType[] = [
             {link: StComponentImg, nameStack: 'Styled'}
         ]
     },
-    {order: 3, name: 'ToDoList', img: ToDoList,
+    {order: 3, name: 'ToDoList', img: ToDoList,link: '',
         stack: [
             {link: ReactImg,nameStack: 'React'},
             {link: RTKImg,nameStack: 'RTK'},

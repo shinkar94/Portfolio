@@ -33,6 +33,10 @@ const AboutHed = styled.div`
   min-width: 15vw;
   ${({theme}) => theme.breakpoints.tablet}{
     min-width: 23vw;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    height: 10vh;
   }
   .block_date {
     padding: 20px 0;
