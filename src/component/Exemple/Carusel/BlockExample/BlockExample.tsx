@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import styled from "styled-components";
 import {InitialExampleType} from "../../../../features/app/exampleSlice";
+import searchImg from '../../../../img/appIcon/search.svg'
 
 type PropsType = {
     example: InitialExampleType[]
@@ -13,7 +14,7 @@ export const BlockExample:FC<PropsType> = ({example}) => {
             <h3>{name}</h3>
             <div className={'blockImg'}>
                 <img src={img} className={'imgExample'} alt={name}/>
-                <div className={'viewShadow'}><a href="#" target={'_blank'}>View</a></div>
+                <div className={'viewShadow'}><a href="#" target={'_blank'}><img src={searchImg} alt="search"/></a></div>
             </div>
             <div className={'staсkExample'}>
                 {
@@ -46,15 +47,21 @@ const StExample = styled.div`
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 0;
+      ${({theme}) => theme.breakpoints.tablet}{
+        opacity: 1;
+      }
       transition: 0.4s ease-in-out;
       & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
         font-size: 32px;
-        color: burlywood;
-        background: rgba(0, 0, 0, 0.93);
         border-radius: 10px;
         padding: 3px;
-        border: 2px outset burlywood;
+        & img{
+          width: 10vw;
+        }
       }
       &:hover{
         opacity: 1;
@@ -81,7 +88,10 @@ const StExample = styled.div`
       justify-content: center;
       align-items: center;
       & img{
-        width: 40px;
+        width: 2.5vw;
+        ${({theme}) => theme.breakpoints.tablet}{
+          width: 6vw;
+        }
       }
     }
     

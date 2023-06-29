@@ -8,41 +8,7 @@ type TextPage ={
 }
 export const TextPage:FC<TextPage> = (props) => {
     const {text, text2} = props
-    // const [printedText, setPrintedText] = useState("");
-    // const [printedText2, setPrintedText2] = useState("");
 
-    // useEffect(() => {
-    //     setPrintedText("")
-    //     setPrintedText(text.text.charAt(0))
-    //     let i = 0;
-    //     const interval = setInterval(() => {
-    //         if (text.text[i] !== undefined) {
-    //             setPrintedText((prevText) => prevText + text.text[i]);
-    //         }
-    //         i++;
-    //         if (i === text.text.length){
-    //             clearInterval(interval);
-    //             if (printedText.endsWith("undefined")) {
-    //                 setPrintedText((prevText) => prevText.slice(0, -10)); // удаляем последние 10 символов
-    //             }
-    //             setPrintedText2("")
-    //             setPrintedText2(text2.text.charAt(0))
-    //             let i = 0;
-    //             const interval2 = setInterval(() => {
-    //                 setPrintedText((prevText) => prevText + text2.text[i]);
-    //                 i++;
-    //                 if (i === text2.text.length){
-    //                     clearInterval(interval2);
-    //                     if (printedText.endsWith("undefined")) {
-    //                         setPrintedText2((prevText) => prevText.slice(0, -10)); // удаляем последние 10 символов
-    //                     }
-    //                 }
-    //             },10)
-    //         }
-    //     }, 10);
-    //
-    //     return () => clearInterval(interval);
-    // }, [text]);
     return (
         <StContainer>
             <h3>{text.title}</h3>
@@ -58,5 +24,9 @@ const StContainer = styled.div`
   background: rgb(0, 0, 0);
   height: 50vh;
   width: 35vw;
+  ${({theme}) => theme.breakpoints.tablet}{
+    height: 70vh;
+    width: 57vw;
+  }
   overflow: auto;
 `

@@ -49,6 +49,9 @@ export const MeAbout = () => {
 
 const StMeAbout = styled.div`
   height: 50vh;
+  ${({theme}) => theme.breakpoints.tablet}{
+    height: 70vh;
+  }
   overflow: auto;
   .meFace {
     display: flex;

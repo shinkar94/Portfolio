@@ -14,6 +14,10 @@ export const ExampleWork = () => {
 const StExampleContainer = styled.div`
   width: 50vw;
   height: 50vh;
+  ${({theme}) => theme.breakpoints.tablet}{
+    width: 80vw;
+    height: 70vh;
+  }
   overflow: auto;
   background: rgba(0, 0, 0, 0.39);
   & h1{
