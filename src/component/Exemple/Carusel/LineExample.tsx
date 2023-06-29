@@ -17,10 +17,17 @@ export const LineExample = () => {
     const FilterExample = exampleState.filter(example => example.order === orderExample)
     return (
         <StLineContainer>
-            <button onClick={backExample} disabled={orderExample <= 1}><img src={leftBtn} alt="leftBtn"/></button>
+            <button onClick={backExample}
+                    disabled={orderExample <= 1}
+                    style={{background: orderExample <=1 ? 'rgba(0, 0, 0, 0)' : 'black'}}>
+                <img src={leftBtn} alt="leftBtn"/>
+            </button>
             <BlockExample example={FilterExample}/>
-            <button onClick={nextExample} disabled={orderExample >= exampleState.length}><img src={rightBtn}
-                                                                                              alt="rightBtn"/></button>
+            <button onClick={nextExample}
+                    disabled={orderExample >= exampleState.length}
+                    style={{background: orderExample >= exampleState.length ? 'rgba(0, 0, 0, 0)' : 'black'}}>
+                <img src={rightBtn} alt="rightBtn"/>
+            </button>
         </StLineContainer>
     );
 };

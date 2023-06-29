@@ -19,8 +19,8 @@ export const BlockExample:FC<PropsType> = ({example}) => {
                 {
                     stack.map((stack, index) => {
                         return(
-                            <div className={'stackImage'}>
-                                <img src={stack.link} alt="stackImg" key={index}/>
+                            <div className={'stackImage'} key={index}>
+                                <img src={stack.link} alt="stackImg"/>
                                 <span>{stack.nameStack}</span>
                             </div>
                         )

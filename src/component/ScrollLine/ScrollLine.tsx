@@ -18,6 +18,9 @@ import storyBook from "../../img/icon/storyBook.svg"
 import TS from "../../img/icon/typeScript.svg"
 import Unit from "../../img/icon/unitTest.svg"
 import WebSocket from "../../img/icon/webSocket.svg"
+import Chartjs from '../../img/icon/chartjs.svg'
+import Router from '../../img/icon/react-router.svg'
+import Vite from '../../img/icon/vite.svg'
 
 export const ScrollLine = () => {
     return (
@@ -41,6 +44,9 @@ export const ScrollLine = () => {
                     <img src={TS} alt="angular"/>
                     <img src={Unit} alt="angular"/>
                     <img src={WebSocket} alt="angular"/>
+                    <img src={Chartjs} className={'smallImg'} alt="angular"/>
+                    <img src={Router} className={'smallImg'} alt="angular"/>
+                    <img src={Vite} className={'smallImg'} alt="angular"/>
                 </div>
             </Marquee>
         </StWrapperMarguee>
@@ -49,6 +55,9 @@ export const ScrollLine = () => {
 
 const StWrapperMarguee = styled.div`
   .lineImg{
+    .smallImg{
+      width: 60px;
+    }
     & img{
       margin-right: 10px;
     }
