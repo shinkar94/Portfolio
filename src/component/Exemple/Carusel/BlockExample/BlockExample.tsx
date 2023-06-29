@@ -17,7 +17,14 @@ export const BlockExample:FC<PropsType> = ({example}) => {
             </div>
             <div className={'staсkExample'}>
                 {
-                    stack.map((stack, index) => <img src={stack} alt="stackImg" key={index}/>)
+                    stack.map((stack, index) => {
+                        return(
+                            <div className={'stackImage'}>
+                                <img src={stack.link} alt="stackImg" key={index}/>
+                                <span>{stack.nameStack}</span>
+                            </div>
+                        )
+                    })
                 }
             </div>
         </StExample>
@@ -62,7 +69,21 @@ const StExample = styled.div`
         opacity: 1;
       }
     }
+  }
+  .staсkExample{
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    border-top: 2px outset burlywood;
+    .stackImage{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      & img{
+        width: 40px;
+      }
+    }
     
   }
-
 `
