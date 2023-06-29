@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {memo, useState} from 'react';
 import styled from "styled-components";
 import {AboutHead} from "./AbautPage/AboutHead";
 import {MeAbout} from "./AbautPage/MeAbout";
@@ -6,7 +6,7 @@ import {Route, Routes} from "react-router-dom";
 import {TextPage} from "./AbautPage/TextPage";
 import {AboutPage} from "./AbautPage/Me";
 
-export const Abaut = () => {
+export const Abaut = memo(() => {
     return (
         <StAboutContent>
             <StAboutWrapper>
@@ -24,7 +24,7 @@ export const Abaut = () => {
             </StAboutWrapper>
         </StAboutContent>
     );
-};
+});
 
 const StAboutWrapper = styled.div`
   display: flex;

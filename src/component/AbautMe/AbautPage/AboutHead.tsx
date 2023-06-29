@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {memo} from 'react';
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
 
-export const AboutHead = () => {
+export const AboutHead = memo(() => {
     return (
         <AboutHed>
             <div className="block_date">
@@ -23,7 +23,7 @@ export const AboutHead = () => {
             </div>
         </AboutHed>
     );
-};
+});
 
 const AboutHed = styled.div`
   display: flex;

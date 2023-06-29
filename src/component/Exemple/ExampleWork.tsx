@@ -1,15 +1,15 @@
-import React from 'react';
+import React, {memo} from 'react';
 import styled from "styled-components";
 import {LineExample} from "./Carusel/LineExample";
 
-export const ExampleWork = () => {
+export const ExampleWork = memo(() => {
     return (
         <StExampleContainer>
             <h1>Work Example</h1>
             <LineExample />
         </StExampleContainer>
     );
-};
+});
 
 const StExampleContainer = styled.div`
   width: 50vw;

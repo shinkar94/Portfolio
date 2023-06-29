@@ -12,8 +12,8 @@ export const Section = () => {
             let moveX = 0
             let moveY = 0
             if(window.innerWidth > 729) {
-                const moveX = (e.clientX - window.innerWidth / 2) * -0.005;
-                const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+                moveX = (e.clientX - window.innerWidth / 2) * -0.005;
+                moveY = (e.clientY - window.innerHeight / 2) * 0.01;
             }
             document.documentElement.style.setProperty("--move-x", `${moveX}deg`);
             document.documentElement.style.setProperty("--move-y", `${moveY}deg`);
