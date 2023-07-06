@@ -9,12 +9,15 @@ import {ExampleWork} from "../Exemple/ExampleWork";
 export const Section = () => {
     useEffect(() => {
         const handleMouseMove = (e:MouseEvent) => {
-            let moveX = 0
-            let moveY = 0
-            if(window.innerWidth > 729) {
-                moveX = (e.clientX - window.innerWidth / 2) * -0.005;
-                moveY = (e.clientY - window.innerHeight / 2) * 0.01;
-            }
+            // let moveX = 0
+            // let moveY = 0
+            // if(window.innerWidth > 729) {
+            //     moveX = (e.clientX - window.innerWidth / 2) * -0.005;
+            //     moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            // }
+            let moveX = (e.clientX - window.innerWidth / 2) * -0.005;
+            let moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+
             document.documentElement.style.setProperty("--move-x", `${moveX}deg`);
             document.documentElement.style.setProperty("--move-y", `${moveY}deg`);
         };
