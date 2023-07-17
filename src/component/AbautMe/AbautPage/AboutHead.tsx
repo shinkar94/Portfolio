@@ -7,8 +7,7 @@ export const AboutHead = memo(() => {
         <AboutHed>
             <div className="block_date">
                 <NavLink to={'Profile'}>
-                    <h3 className="block_yaer">Shinkarenko</h3>
-                    <h4 className="block_title">Roman</h4>
+                    <h3 className="block_yaer">Information</h3>
                 </NavLink>
             </div>
             <div className="block_date">
@@ -40,7 +39,7 @@ const AboutHed = styled.div`
   }
   .block_date {
     padding: 20px 0;
-    transition: 0.5;
+    transition: 0.2s;
     cursor: pointer;
     & a{
       display: flex;
@@ -49,7 +48,9 @@ const AboutHed = styled.div`
       align-items: center;
       text-decoration: none;
       color: white;
-      
+      &:hover{
+        color: burlywood;
+      }
     }
 
     &:hover {
