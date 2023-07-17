@@ -29,4 +29,7 @@ const StContainer = styled.div`
     width: 80vw;
   }
   overflow: auto;
+  & h3{
+    color: burlywood;
+  }
 `

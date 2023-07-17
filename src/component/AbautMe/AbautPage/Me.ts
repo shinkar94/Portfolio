@@ -53,19 +53,9 @@ export const AboutPage:AboutPageType = {
 
     ['BSATU']: {title: "BSATU", text: "Received a diploma of a Mechanical Engineer with a specialization in the production support of agricultural production processes"},
     ['KHSHP']: {title: "", text: "Arrived for work in KHSHP in the city of Chashniki. For half a year he worked as a chief engineer of the economy."},
-    ['ARMY']: {title: "ARMY", text: "Passing military service in the Armed Forces of the Republic of Belarus as a driver-mechanic MT-LB from 2017 to 2018. He also served two years under the contract as the commander of the department of the jamming station in electronic warfare. In his free time, he taught himself programming. HTML, CSS, JS, jQuery, PHP, Bootstrap."},
-    ['BORISOVENRGO']: {title: "MINSKENERGO", text: "Software Engineer at Borisov Power Grids. Support for internal web project. Creation of new software on the website.\n"+
-    "                    The main stack JS, PHP, SQL, PREPROS (native approach without the use of frameworks and libraries) - Apache server, ORACLE database.\n"+
-    "                    One person was responsible for the project, so the processing front and back is up to me. During the work, I implemented a profile login system and access control to applications,\n"+
-    "                    wrote the administrator's office (activity tracking, issuance of access rights to applications, etc.), wrote an application for accounting for the arrival and issuance of property of the service for the princes of warehouse accounting\n" +
-    "                    (arrival, registration, assignment to the user, detailed information on equipment, output of the necessary data in EXEL)\n" +
-    "                    He also created many programs by type (tabular journals, work plans, etc.).\n" +
-    "                    Of the interesting tasks, a web software was created, the principle of which was to accept an EXEL file with data\n" +
-    "                    reading and encrypting this data with the key sending to the database. In the database, the data is stored in encrypted form for decryption, a key is needed.\n" +
-    "                    The key is stored locally in local sorage by the application administrator. If necessary, work with data administrator resets the key to users after which they can make their own changes. After the end of the work, a new EXEL is displayed and the data in the database is re-encrypted or deleted\n" +
-    "                    at the request of the application administrator. This decision included the logonization of all actions occurring in the application, opening and closing access for departments.\n" +
-    "                    All applications had a SPA model using AJAX, Responsive layout (LEPTOP, TABLET, MOBAIL)"},
-    ['INCUBATOR']: {title: "IT-INCUBATOR", text: "Обучение в IT-INCUBATOR на FRONTEND DEVOLOPER. (REACT,REDUX, REDUX TOOLKIT, REACT NATIVE, VUE, ANGULAR) работа как с CRA так VITE приклодное (STYLED COMPONENT, FORMIK, PRITTER, MU, BOOTSTRAP)"}
+    ['ARMY']: {title: "Freelancer", text: "Had some freelancing experience in my spare time. Self-created 2 projects, which can be seen in the portfolio. Basically, I worked with adding new functionality to already finished projects. In my work, I used possible technologies: HTML, SASS, JS, REACT, REDUX, TS, PHP, SQL."},
+    ['BORISOVENRGO']: {title: "MINSKENERGO", text: "For three years of work, he gained experience in programming individual and team projects. I independently created and maintain the internal website of the organization. The site has about 50 applications (Journals, directories, inventory control, work plans, to-do lists, internal chat, etc.). Most applications create reports in Excel. The website has a profile access control system with the issuance of access rights to applications (Administration). I often used data encryption in my work."},
+    ['INCUBATOR']: {title: "IT-INCUBATOR", text: "For 6 months, I actively studied the full stack of Frontend development, with high-quality assimilation: React, Redux, RTK, RTK Query, Unit test, TS with constant knowledge control. I also gained experience in mentoring in conducting additional classes on react for junior cadets. I am currently doing an internship."}
 }
 
 
