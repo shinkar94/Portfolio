@@ -3,6 +3,7 @@ import {createSlice} from "@reduxjs/toolkit";
 import FurutaImg from '../../img/exemple/furuta.jpg'
 import ToDoList from '../../img/exemple/todo.jpg'
 import MyMoney from '../../img/exemple/MyMoney.jpg'
+import Cards from '../../img/exemple/cards.png'
 //stack
 import ReactImg from '../../img/icon/react.svg'
 import RTKImg from '../../img/icon/reduxToolkit.svg'
@@ -16,6 +17,7 @@ import formik from "../../img/icon/formik2.svg"
 import StComponentImg from '../../img/icon/stcomponent.svg'
 import Next from '../../img/icon/next-gray.svg'
 import Mongo from '../../img/icon/mongo.svg'
+import Sass from '../../img/icon/sass.svg'
 export type InitialExampleType = {
     order: number
     name: string
@@ -36,7 +38,7 @@ const InitialState:InitialExampleType[] = [
             {link: CSSImg, nameStack: 'CSS'}
         ]
     },
-    {order: 2, name: 'MyMoney', img: MyMoney,link: '',
+    {order: 2, name: 'Spend Wise', img: MyMoney,link: 'https://spend-wise-seven.vercel.app/',
         stack: [
             {link: Next, nameStack: 'Next'},
             {link: RTKImg,nameStack: 'RTK'},
@@ -52,6 +54,14 @@ const InitialState:InitialExampleType[] = [
             {link: RTKImg,nameStack: 'RTK'},
             {link: formik, nameStack: 'Formik'},
             {link: StComponentImg, nameStack: 'Styled'}
+        ]
+    },
+    {order: 4, name: 'Cards', img: Cards,link: 'https://cards-eosin-ten.vercel.app/',
+        stack: [
+            {link: ReactImg, nameStack: 'React'},
+            {link: RTKImg,nameStack: 'RTK'},
+            {link: ViteImg, nameStack: 'Vite'},
+            {link: Sass, nameStack: 'SCSS'},
         ]
     }
 ]
