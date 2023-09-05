@@ -14,6 +14,8 @@ import ChartImg from '../../img/icon/chartjs.svg'
 import Router from '../../img/icon/react-router.svg'
 import formik from "../../img/icon/formik2.svg"
 import StComponentImg from '../../img/icon/stcomponent.svg'
+import Next from '../../img/icon/next-gray.svg'
+import Mongo from '../../img/icon/mongo.svg'
 export type InitialExampleType = {
     order: number
     name: string
@@ -36,11 +38,10 @@ const InitialState:InitialExampleType[] = [
     },
     {order: 2, name: 'MyMoney', img: MyMoney,link: '',
         stack: [
-            {link: ReactImg,nameStack: 'React'},
+            {link: Next, nameStack: 'Next'},
             {link: RTKImg,nameStack: 'RTK'},
-            {link: ViteImg, nameStack: 'Vite'},
+            {link: Mongo,nameStack: 'Mongo'},
             {link: ChartImg, nameStack: "ChartJs"},
-            {link: Router, nameStack: 'Router'},
             {link: formik, nameStack: 'Formik'},
             {link: StComponentImg, nameStack: 'Styled'}
         ]

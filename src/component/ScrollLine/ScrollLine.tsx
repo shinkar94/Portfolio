@@ -21,6 +21,8 @@ import WebSocket from "../../img/icon/webSocket.svg"
 import Chartjs from '../../img/icon/chartjs.svg'
 import Router from '../../img/icon/react-router.svg'
 import Vite from '../../img/icon/vite.svg'
+import Next from '../../img/icon/nextjs.svg'
+import Mongo from '../../img/icon/mongo.svg'
 
 export const ScrollLine = () => {
     return (
@@ -47,6 +49,8 @@ export const ScrollLine = () => {
                     <img src={Chartjs} className={'smallImg'} alt="angular"/>
                     <img src={Router} className={'smallImg'} alt="angular"/>
                     <img src={Vite} className={'smallImg'} alt="angular"/>
+                    <img src={Next} className={'smallImg'} alt="angular"/>
+                    <img src={Mongo} className={'smallImg'} alt="angular"/>
                 </div>
             </Marquee>
         </StWrapperMarguee>

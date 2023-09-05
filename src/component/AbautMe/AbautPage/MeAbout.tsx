@@ -41,16 +41,17 @@ export const MeAbout = () => {
                         <span className={'descSpan'}>Experience: </span><span>3 Years</span>
                     </div>
                     <div className="info_block">
-                        <span className={'descSpan'}>Stack: </span><span>HTML, SASS, JS, REACT, REDUX, TS, RTK, RTK Query,SQL, Story book, Formik, Unit test, Router dom, MU, Styled component</span>
+                        <span className={'descSpan'}>Stack: </span><span> JS, TS, REACT, REDUX, MobX, RTK, RTK Query, NEXT, MongoDB, Oracle</span>
+                    </div>
+                    <div className="info_block">
+                        <span className={'descSpan'}>Tools: </span><span> HTML, SASS, SQL, Story book, Formik, Unit test, Router dom, MU, Styled component</span>
                     </div>
                 </div>
             </div>
             <ScrollLine />
             <div className="steck">
-                <p className="block_steck">I have been doing front-end development for three years, using HTML, SASS, JS, REACT, REDUX, TS, PHP, SQL to create a SPA. In these areas, I am constantly improving by learning React Native.</p>
-                <p className="block_steck">Passed training at Frontend developer in IT-INCUBATOR studied REACT, REDUX, RTK, RTK Query, Story book, Formik, Unit test, Router dom, MU, Styled component. In the process of training, I got acquainted with Mob-X on my own.</p>
-                <p className="block_steck">I am currently doing a free internship at IT-INCUBATOR. During the internship, we study and go through additional classes in Angular, Vue, React Native. The plans include full stack development (Node.js). In my spare time I improve my English.</p>
-                <p className="block_steck">I am looking for a place where I can develop as a developer by improving my knowledge. I am open to job offers both individually and in a team, I am considering moving.</p>
+                <p className="block_steck">For the past 3 years, I’ve been engaged in fronted development, using HTML, SASS, JS, React, Redux, TS, PHP,Next and SQL to create SPA. Continuously striving for growth I’ve expanded my expertise to include REACT NATIVE. I’ve completed Fronted Developer training at IT-INCUBATOR, mastering REACT, REDUX, RTK, RTK Query, Story book, Formik, Unit test, Router dom, MU, Styled component. My eagerness for learning led me to independently explore MobX, MongoDB, Express during this period.</p>
+                <p className="block_steck">I’m looking for an environment that can foster my growth as a developer and can give opportunity to refine my knowledge. I’m open to both individual and team-oriented job offers. Relocation is possible.</p>
             </div>
         </StMeAbout>
     );
