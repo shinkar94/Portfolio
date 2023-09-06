@@ -16,7 +16,7 @@ export const MeAbout = () => {
             <div className="meFace">
                 <div className={'contactSection'}>
                     <Link to={'tel:+375298275332'}><img src={phoneImg} alt="phoneImg"/></Link>
-                    <Link to={'https://www.linkedin.com/in/%D1%80%D0%BE%D0%BC%D0%B0%D0%BD-%D1%88%D0%B8%D0%BD%D0%BA%D0%B0%D1%80%D0%B5%D0%BD%D0%BA%D0%BE-bb402b254/'} target={'_blank'}><img src={linkedinImg} alt="phoneImg"/></Link>
+                    <Link to={'https://www.linkedin.com/in/roman-shinkarenko-bb402b254/'} target={'_blank'}><img src={linkedinImg} alt="phoneImg"/></Link>
                     <Link to={'https://t.me/RomanShinkarenko'} target={'_blank'}><img src={telegramImg} alt="phoneImg"/></Link>
                     <Link to={'mailto:romka94shinkarenko@gmail.com'}><img src={gmailImg} alt="phoneImg"/></Link>
                     <Link to={'https://github.com/shinkar94'} target={'_blank'}><img src={githubImg} alt="phoneImg"/></Link>

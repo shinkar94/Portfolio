@@ -23,13 +23,14 @@ import Router from '../../img/icon/react-router.svg'
 import Vite from '../../img/icon/vite.svg'
 import Next from '../../img/icon/nextjs.svg'
 import Mongo from '../../img/icon/mongo.svg'
+import MobX from '../../img/icon/mobx.svg'
 
 export const ScrollLine = () => {
     return (
         <StWrapperMarguee>
             <Marquee>
                 <div className={'lineImg'}>
-                    <img src={angular} alt="angular"/>
+                    <img src={MobX} className={'smallImg'} alt="MobX"/>
                     {/*<img src={apollo} alt="angular"/>*/}
                     <img src={cssImg} alt="angular"/>
                     <img src={formik} alt="angular"/>
