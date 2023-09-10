@@ -40,7 +40,6 @@ export const ScrollLine = () => {
                     <img src={MU} alt="angular"/>
                     <img src={react} alt="angular"/>
                     <img src={reactQuery} alt="angular"/>
-                    {/*<img src={reduxSaga} alt="angular"/>*/}
                     <img src={reduxTol} alt="angular"/>
                     <img src={restApi} alt="angular"/>
                     <img src={storyBook} alt="angular"/>
