@@ -34,7 +34,6 @@ export const ScrollLine = () => {
                     {/*<img src={apollo} alt="angular"/>*/}
                     <img src={cssImg} alt="angular"/>
                     <img src={formik} alt="angular"/>
-                    {/*<img src={graphQL} alt="angular"/>*/}
                     <img src={html} alt="angular"/>
                     <img src={javaScript} alt="angular"/>
                     <img src={MU} alt="angular"/>
